@@ -1006,10 +1006,14 @@ h1, h2, h3, h4, h5, h6 {
     /* Positioning next and previous buttons in the center */
     .slick-prev {
         left: 10px;
+        color: black;
+        font-size: xx-large;
     }
 
     .slick-next {
         right: 10px;
+        color: black;
+    font-size: xx-large;
     }
 
     /* Responsive: Display 4 cards on large screens, 2 on medium, and 1 on small */
