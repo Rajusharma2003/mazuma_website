@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Carousel with Cards</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        .carousel-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px; /* Added gap between cards */
+        }
+        .carousel-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .carousel-card h5 {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        .carousel-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .inquiry-btn {
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .inquiry-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Center the next and previous buttons */
+        .carousel-container {
+            position: relative;
+        }
+
+        .slick-prev, .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            font-size: 30px;
+            color: #000;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .slick-prev:hover, .slick-next:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Positioning next and previous buttons in the center */
+        .slick-prev {
+            left: 10px;
+        }
+
+        .slick-next {
+            right: 10px;
+        }
+
+        /* Responsive: Display 4 cards on large screens, 2 on medium, and 1 on small */
+        @media (min-width: 1200px) {
+            .slick-carousel .carousel-card {
+                width: 23%; /* 4 cards on large screens */
+            }
+        }
+
+        @media (max-width: 1199px) and (min-width: 768px) {
+            .slick-carousel .carousel-card {
+                width: 45%; /* 2 cards on medium screens */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .slick-carousel .carousel-card {
+                width: 80%; /* 1 card on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5 carousel-container">
+        <div class="slick-carousel">
+            <!-- Card 1 -->
+            <div class="carousel-card">
+                <img src="https://img.freepik.com/free-photo/arrangement-with-colorful-books_23-2148882775.jpg?ga=GA1.1.332943406.1726205077&semt=ais_hybrid" alt="Card Image 1">
+                <h5 class="my-3">Product 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor eget arcu lacinia.</p>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="carousel-card">
+                <img src="https://img.freepik.com/free-photo/arrangement-with-colorful-books_23-2148882775.jpg?ga=GA1.1.332943406.1726205077&semt=ais_hybrid" alt="Card Image 2">
+                <h5 class="my-3">Product 2</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor eget arcu lacinia.</p>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="carousel-card">
+                <img src="https://img.freepik.com/free-photo/arrangement-with-colorful-books_23-2148882775.jpg?ga=GA1.1.332943406.1726205077&semt=ais_hybrid" alt="Card Image 3">
+                <h5 class="my-3">Product 3</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor eget arcu lacinia.</p>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <!-- Card 4 -->
+            <div class="carousel-card">
+                <img src="https://img.freepik.com/free-photo/arrangement-with-colorful-books_23-2148882775.jpg?ga=GA1.1.332943406.1726205077&semt=ais_hybrid" alt="Card Image 4">
+                <h5 class="my-3">Product 4</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor eget arcu lacinia.</p>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <!-- Card 4 -->
+            <div class="carousel-card">
+                <img src="https://img.freepik.com/free-photo/arrangement-with-colorful-books_23-2148882775.jpg?ga=GA1.1.332943406.1726205077&semt=ais_hybrid" alt="Card Image 4">
+                <h5 class="my-3">Product 4</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor eget arcu lacinia.</p>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <!-- Card 4 -->
+            <div class="carousel-card">
+                <img src="https://img.freepik.com/free-photo/arrangement-with-colorful-books_23-2148882775.jpg?ga=GA1.1.332943406.1726205077&semt=ais_hybrid" alt="Card Image 4">
+                <h5 class="my-3">Product 4</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor eget arcu lacinia.</p>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+            <!-- Card 4 -->
+            <div class="carousel-card">
+                <img src="https://img.freepik.com/free-photo/arrangement-with-colorful-books_23-2148882775.jpg?ga=GA1.1.332943406.1726205077&semt=ais_hybrid" alt="Card Image 4">
+                <h5 class="my-3">Product 4</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor eget arcu lacinia.</p>
+                <button class="inquiry-btn">Inquire Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.slick-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 4,  // Show 4 cards by default
+                slidesToScroll: 1,
+                arrows: true, // Enable arrows
+                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4,  // 4 cards on large screens
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,  // 2 cards on medium screens
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,  // 1 card on small screens
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+</html>
